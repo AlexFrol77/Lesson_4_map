@@ -33,11 +33,9 @@ void Square::transShift() {
 	std::cin >> temp_X;
 	std::cout << "Y = ";
 	std::cin >> temp_Y;
-	for (auto& it : vecCoorX) {
-		it.second += temp_X;
-	}
-	for (auto& it : vecCoorY) {
-		it.second += temp_Y;
+	for (int i = 0; i < vecCoorX.size(); i++) {
+		vecCoorX[i].second += temp_X;
+		vecCoorY[i].second += temp_Y;
 	}
 }
 void Square::scaleX() {
@@ -62,10 +60,8 @@ void Square::scale() {
 	std::cin >> temp_X;
 	std::cout << "Y = ";
 	std::cin >> temp_Y;
-	for (auto& it : vecCoorX) {
-		it.second /= temp_X;
-	}
-	for (auto& it : vecCoorY) {
-		it.second /= temp_Y;
+	for (int i = 0; i < vecCoorX.size(); i++) {
+		vecCoorX[i].second /= temp_X;
+		vecCoorY[i].second /= temp_Y;
 	}
 }

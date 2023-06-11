@@ -1,8 +1,5 @@
 #pragma once
 #include "Line.h"
-#include <iostream>
-#include <vector>
-#include <string>
 
 class Cube : public Line {
 public:

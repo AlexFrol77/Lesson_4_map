@@ -42,14 +42,10 @@ void Cube::transShift() {
 	std::cin >> temp_Y;
 	std::cout << "Z = ";
 	std::cin >> temp_Z;
-	for (auto& it: vecCoorX) {
-		it.second += temp_X;
-	}
-	for (auto& it : vecCoorY) {
-		it.second += temp_Y;
-	}
-	for (auto& it : vecCoorZ) {
-		it.second += temp_Z;
+	for (int i = 0; i < vecCoorX.size(); i++) {
+		vecCoorX[i].second += temp_X;
+		vecCoorY[i].second += temp_Y;
+		vecCoorZ[i].second += temp_Z;
 	}
 }
 void Cube::scaleX() {
@@ -84,13 +80,9 @@ void Cube::scale() {
 	std::cin >> temp_Y;
 	std::cout << "Z = ";
 	std::cin >> temp_Z;
-	for (auto& it : vecCoorX) {
-		it.second /= temp_X;
-	}
-	for (auto& it : vecCoorY) {
-		it.second /= temp_Y;
-	}
-	for (auto& it : vecCoorZ) {
-		it.second /= temp_Z;
+	for (int i = 0; i < vecCoorX.size(); i++) {
+		vecCoorX[i].second /= temp_X;
+		vecCoorY[i].second /= temp_Y;
+		vecCoorZ[i].second /= temp_Z;
 	}
 }
